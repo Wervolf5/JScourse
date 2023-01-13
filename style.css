@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: Roboto;
-    src: url("../Pr2/Shrift/Roboto.ttf");
+    src: url("./Shrift/Roboto.ttf");
 }
 
 @font-face {
     font-family: Robotobold;
-    src: url("../Pr2/Shrift/Roboto.ttf");
+    src: url("./Shrift/Roboto.ttf");
     font-weight: bold;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .main {
-    background-image: url(../ing/background.png);
+    background-image: url(./ing/background.png);
     background-position: center;
     background-size: cover;
     padding: 104px 0 154px 0;
@@ -132,8 +132,12 @@ body {
     margin-top: 40px;
 }
 
+.car-item-image:hover img {
+    transform: scale(1.1);
+}
 .car-item-image img {
     vertical-align: bottom;
+    transition: all .3s;
 }
 
 .car-item-title {
